@@ -18,9 +18,11 @@
      ?>
 
   <p>
-  ciao
+  
   <?php echo $name . ' ' . $age . $mail?>
   </p>
+
+  
 
   
 </body>
