@@ -11,27 +11,54 @@
 <p>array</p>
 <?php
 $mioArr = [
-  'nome' => 'alessandro',
-  'cognome' => 'ciancio',
-  'via' => 'desiderio 15',
+  'nome' => 'nome: alessandro',
+  'cognome' => 'cognome: ciancio',
+  'via' => 'via, desiderio 15',
 ];
+
+var_dump($mioArr);
+$mioArr['age'] =  41;
 var_dump($mioArr);
 var_dump($mioArr['nome'] . ' ' . $mioArr['cognome']);
+
 ?>
+
 <p>
 <?php
 echo $mioArr[nome] . ' ' . $mioArr[cognome];
-
-
-
 ?>
 </p>
+
 <p>
-via:
+indirizzo: 
 <?php
+
 echo $mioArr[via];
 ?>
 </p>
+
+<ul>
+  <?php
+  foreach ($mioArr as $utente) {
+
+
+  ?>
+  <li>
+  <?php
+    echo $utente;
+     }
+  ?>
+ 
+  </li>
+ 
+
+</ul>
+<p>
+<?php
+echo ($mioArr['nome'] . ' / ' . $mioArr['cognome']);
+?>
+</p>
+
 
 
 
