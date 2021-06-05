@@ -15,12 +15,20 @@
 <?php
 
 $data = $_GET;
-if(empty(data['name']) || empty(data['mail']) || empty(data['age']) ) {
-  echo "errore: inserire i dati ";
+if(empty($data['name']) ) {
+  echo "errore: inserire i dati";
+}elseif(strlen($data['name']) <=2) {
+  echo "errore troppo corto";
+  
+}elseif(strpos($data['mail'], '@') === false || strpos($data['mail'], '.' === false)){
+  echo "indirizzo email non vaildo";
 }
-?>
+else {
+  echo "accesso riuscito";
+}
 
-   
+
+?>
   
 
   
