@@ -7,21 +7,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>snack2</title>
+  <title>snack2 email</title>
 </head>
 <body>
-   <?php
-    $name = $_GET['name'] ;
-    $age = $_GET['age'] ;
-    $mail = $_GET['mail'] ;
+<h2>email</h2>
 
-     ?>
+<?php
 
-  <p>
-  
-  <?php echo $name . ' ' . $age . $mail?>
-  </p>
+$data = $_GET;
+if(empty(data['name']) || empty(data['mail']) || empty(data['age']) ) {
+  echo "errore: inserire i dati ";
+}
+?>
 
+   
   
 
   
